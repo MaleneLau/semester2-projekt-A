@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System med SQL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Brugernavn">
+        <input type="password" id="loginPassword" placeholder="Adgangskode">
+        <button onclick="login()">Login</button>
+
+        <h2>Registrer</h2>
+        <input type="text" id="registerUsername" placeholder="Brugernavn">
+        <input type="password" id="registerPassword" placeholder="Adgangskode">
+        <select id="registerRole">
+            <option value="viewer">Viewer</option>
+            <option value="editor">Editor</option>
+            <option value="admin">Admin</option>
+        </select>
+        <button onclick="register()">Registrer</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

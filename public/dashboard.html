@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="dashboard.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Velkommen, <span id="username"></span></h2>
+        <p>Din rolle: <span id="role"></span></p>
+        
+        <div id="adminSection" style="display: none;">
+            <h3>Admin Panel</h3>
+            <p>Kun for administratorer.</p>
+        </div>
+
+        <div id="editorSection" style="display: none;">
+            <h3>Redigering</h3>
+            <p>Kun for redaktører.</p>
+        </div>
+
+        <button onclick="logout()">Log ud</button>
+    </div>
+</body>
+</html>
