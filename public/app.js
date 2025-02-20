@@ -8,7 +8,7 @@ async function register() {
     const res = await fetch(`${API_URL}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password, role })
+        body: JSON.stringify({ username, password, role }) //inputdata til JSON-format
     });
 
     document.getElementById("message").innerText = (await res.json()).message;
